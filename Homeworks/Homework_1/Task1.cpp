@@ -19,7 +19,7 @@ int main()
     {
         while(secondNumber>0)
     {
-     firsNumber=y;
+     firstNumber=y;
      y=secondNumber;
      cin>>secondNumber;
      {
