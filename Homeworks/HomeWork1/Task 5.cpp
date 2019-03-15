@@ -5,24 +5,24 @@
 using  namespace  std;
 
 int main()
-{   int num, swap_num;
-    int first_digit, last_digit, digits;
+{   
+    int number, swapNumber;
+    int firstDigit, lastDigit, digits;
 
-    //Reads a number
     cout<<"Please, enter a number:"<<endl;
-    cin>>num;
+    cin>>number;
 
-    last_digit=num%10; // Gets the last digit
-    digits= log10(num); // Gets the digits-1
-    first_digit=(num/pow(10,digits)); // Gets the first digit
+    lastDigitt=number%10; 
+    digits= log10(number); 
+    first_digit=(number/pow(10,digits)); 
 
-    swap_num=last_digit;
-    swap_num=swap_num*pow(10,digits);
-    swap_num=swap_num+num%((int)pow(10,digits));
-    swap_num=swap_num-last_digit;
-    swap_num=swap_num+first_digit;
+    swapNumber=lastDigit;
+    swapNumber=swapNumber*pow(10,digits);
+    swapNumber=swapNumber+number%((int)pow(10,digits));
+    swapNumber=swapNumber-lastDigit;
+    swapNumber=swapNumber+firstDigit;
 
-    cout<<"The number after swapping is:"<<swap_num<<endl;
+    cout<<"The number after swapping is:"<<swapNumber<<endl;
 
 return 0;
 
