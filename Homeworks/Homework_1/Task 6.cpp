@@ -23,7 +23,8 @@ else
         for (int j=1; j<=numberOfRows-i; j++) 
         cout<<" ";
         {
-         for (int j=1; j<=i; j++) cout<< symbol <<" ";
+         for (int j=1; j<=i; j++)
+         cout<< symbol <<" ";
          {
             cout<<endl;
          }
