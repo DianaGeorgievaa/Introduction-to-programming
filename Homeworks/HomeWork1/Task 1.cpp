@@ -6,35 +6,34 @@ using  namespace  std;
 int main()
 {
     cout<<"If you want to stop the program enter a negative number or 0!"<<endl;
-    int first_num, second_num, y;
+    int firstNumber, secondNumber, y;
     cout<<"Please, enter the sequence:"<<endl;
-    // Reads the sequence
-    cin>>first_num;
-    cin>>second_num;
-    y=second_num;
-    // Checks if the sequence is undefined
-    if (first_num==second_num)
+    cin>>firstNumber;
+    cin>>secondNumber;
+    y=secondNumber;
+    if (firstNumber==secondNumber)
      {
          cout<<"Undefined";
      }
     else
     {
-        while(second_num>0)
+        while(secondNumber>0)
     {
-     first_num=y;
-     y=second_num;
-     cin>>second_num;
+     firsNumber=y;
+     y=secondNumber;
+     cin>>secondNumber;
      {
-        if (y==second_num)
+        if (y==secondNumber)
          {
-             cout<<"Undefined"<<endl; break;
+             cout<<"Undefined"<<endl; 
+             break;
          }
      }
-    if(first_num<y)
+    if(firstNumber<y)
         {
             cout<<"Ascending"<<endl;
         }
-     else if (first_num>y)
+     else if (firstNumber>y)
         {
             cout<<"Descending"<<endl;
         }
