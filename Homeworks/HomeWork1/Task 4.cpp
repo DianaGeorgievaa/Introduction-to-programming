@@ -4,22 +4,22 @@
 using  namespace  std;
 
 int main()
-{   int second_num, first_num, min_num;
-    cin>>first_num;
-
-    while(first_num>0) // Stops if the number is <= 0
+{   int secondNumber, firstNumber, minNumber;
+    cin>>firstNumber;
+   
+ while(firstNumber>0) 
  {
      cin>>second_num;
-     min_num=min(first_num, second_num);
+     minNumber=min(firstNumber, secondNumber);
 
-  while(min_num>0)
+  while(minNumber>0)
      {
-         while(second_num>0)
+         while(secondNumber>0)
      {
-         min_num=min(min_num,second_num);
-         cin>>second_num;
+         minNumber=min(minNumber,secondNumber);
+         cin>>secondNumber;
      }
-     cout<<min_num;
+     cout<<minNumber;
      break;
      }
    break;
