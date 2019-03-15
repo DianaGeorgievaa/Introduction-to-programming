@@ -4,24 +4,24 @@
 using  namespace  std;
 
 int main()
-{   // Reads a symbol
+{   
     char symbol;
     cin>>symbol;
-
-    int num_rows;
-    // Reads the number of the rows
+    int numberOfRows;
+   
     cout << "Enter number of rows: ";
-    cin >> num_rows;
+    cin >> numberOfRows;
 
-if (num_rows>25)
+if (numberOfRows>25)
     {
-        cout<<"Error.Incorrect input";
+        cout<<"Error! Incorrect input";
     }
 else
 {
-    for ( int i=1; i<=num_rows; i++)
+    for ( int i=1; i<=numberOfRows; i++)
     {
-        for (int j=1; j<=num_rows-i; j++) cout<<" ";
+        for (int j=1; j<=numberOfRows-i; j++) 
+        cout<<" ";
         {
          for (int j=1; j<=i; j++) cout<< symbol <<" ";
          {
